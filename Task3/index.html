@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a59f9835cf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer/SEO</p>
+                <h1>Hi, I'm <span>Mohd Haseeb Siddiqui</span> <br> From Lucknow</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/home.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="p1">I am experienced in MERN stack for developing fast web application (3 Month training
+                        at Digipodium).
+                        I have worked on front-end technologies (HTML5,CSS, Bootstrap, Javascript and other JS
+                        libraries) and Back-end technologies (JSP and Nodejs) for almost a year and had done several
+                        projects.I am skillfull in Java, Data structure with hands on experience on web developement tools.
+                        Aspiring for a challenging career in Software Development as to use my learned skills and
+                        experience for best results</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            <li><span>Web Developer</span><br><p>Web application Development</p>
+                                <p>Frontend Development with HTML, CSS, Bootstrap,Reactjs, and JavaScript</p>
+                                <p>Backend Development with Node.js and MongoDb</p></li>
+
+                                <li><span>UI/UX</span><br><p>UI/UX design is a multifaceted discipline that plays a pivotal role in creating digital interfaces for web and mobile applications.</p>
+                                <p>UX designers, in contrast, delve deeper into the user experience, ensuring that the interface functions seamlessly and intuitively.</p></li>
+
+                            <li><span>SEO</span><br><p>Keyword Researching</p>
+                                <p>On-Page and Off-Page SEO Optimization</p>
+                                <p>SEO Analysis and Reporting</p></li>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2023 (4-weeks)</span><br>Web Developer Intern at Codsoft</li>
+                            <li><span>Aug 2023 (1 month)</span><br>Buisness Development Associate At Dexterity Edtech
+                            </li>
+                            <li><span>May 2023-July 2023</span><br>MERN Training From Digipodium</li>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>B tech (Computer Science) From Integral University</li>
+                            <li><span>2019</span><br>IntermediateFrom Jesus and Mary Inter College</li>
+                            <li><span>2017</span><br>High School From Jesus and Mary Inter College</li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web development refers to the process of creating and maintaining websites or web applications that are accessible over the internet. It encompasses a wide range of activities and skills required to design, build, and manage websites, 
+                        from the frontend (what users see and interact with) to the backend (the server-side processes and databases that power websites).</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>User Interface (UI): UI design focuses on the visual elements and interactive components of a digital product. It includes the layout, color schemes, typography, icons, buttons,
+                         and other visual elements that users see and interact with. <br>
+                         User Experience (UX): UX design is concerned with the overall experience that users have while interacting with a digital product. 
+                        </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-searchengin"></i>
+                    <h2>SEO</h2>
+                    <p>SEO, or Search Engine Optimization, is a digital marketing strategy and practice aimed at improving a website's visibility and ranking on search engine results pages (SERPs),
+                         primarily on search engines like Google, Bing, and Yahoo. The main goal of SEO is to increase organic (non-paid) traffic to a website by optimizing various on-page and off-page factors.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>The Big Meal</h3>
+                        <p>A food ordering web app is a digital platform that allows users to browse, select, and order food from a variety of restaurants and eateries. These apps provide a convenient and efficient way for customers to satisfy their culinary cravings without leaving their homes. Users can typically explore menus, customize orders, and make payments online,
+                             with the food then delivered to their chosen location or made available for pickup.</p>
+                        <a href="https://bigmealtest.onrender.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Wooden Cart Shop</h3>
+                        <p>A wooden furniture online shop is a digital marketplace that specializes in offering a wide range of wooden furniture and home decor items for sale. These online shops provide customers with a convenient platform to browse, select, and purchase a variety of wooden furniture pieces, including tables,
+                            chairs, cabinets, beds, and more, all crafted from wood.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>University Management System</h3>
+                        <p>A university management system app is a comprehensive digital tool designed to streamline and optimize the administrative and academic functions of educational institutions, primarily universities. This app offers a centralized platform for managing various aspects of university operations, such as student records, admissions, course scheduling,
+                             faculty management, financial tracking, and more.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Haseebsid42@gmai.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9140769881</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/Haseeb.sid.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/HaseebSid7" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/haseeb__sid/?next=%2F" target="_blank"><i
+                                class="fa-brands fa-instagram" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/sidhaseeb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="submit-to-google-sheet">
+                        <input type="text" class="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ©️ kevin.Easy Tutorials</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function clodemenu() {
+            sidemenu.style.right = "-200";
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwDXqAoyKwWaIs-UGKmlQRQsXaq5NHf9WDw-qMYRRH4ILlZsMiYnqcboexYe6Uwg0uNeA/exec';
+            const form = document.querySelector('.submit-to-google-sheet');
+            const msg = document.getElementById("msg");
+
+            if (form) {
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message Sent Successfully";
+                            setTimeout(function () {
+                                msg.innerHTML = "";
+                            }, 5000);
+                            form.reset();
+                        })
+                        .catch(error => console.error('Error!', error.message));
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
